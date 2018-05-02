@@ -1,0 +1,20 @@
+@import 'lib/breakpoint';
+@import 'lib/breakpoint-slicer';
+@import "common/variables";
+@import "common/mixin";
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+}
+
+@media (min-width: 1440px) {
+}
+
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (max-height: 1024px) {
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+}
