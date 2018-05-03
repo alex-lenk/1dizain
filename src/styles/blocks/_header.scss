@@ -1,56 +1,72 @@
+.header {
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+.header-top {
+  margin-bottom: 20px;
+  display: flex;
+}
+
 .header-info {
-    display: flex;
+  max-width: 79%;
+  padding-top: 25px;
+  text-align: center;
+  flex: 1;
 }
 
-.header-contacts {
-    padding-top: 38px;
-    margin-right: auto;
-    margin-left: auto;
-    line-height: 1;
-    text-align: right;
-    position: relative;
+.header-title {
+  color: #f26e20;
+  font-size: 28px;
+  font-weight: normal;
 }
 
-.header-contacts__phone {
-    width: 100%;
-    margin-bottom: 5px;
-    color: $colorLink;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    @include font-size(30px);
+.header-title__name {
+  margin-top: 9px;
+  color: #3e535c;
+  font-size: 22px;
+  display: block;
 }
 
-.header-contacts__icon {
-    width: 25px;
-    height: 26px;
-    margin-top: -5px;
-    margin-right: 12px;
-    fill: $colorLink;
+.header-logo {
+  width: 21%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.header-contacts__order {
-    color: $grayColor;
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    @include font-size(20px);
-    @include lineDecor($grayLightColor);
+.header-menu {
+  display: flex;
+  justify-content: center;
 }
 
-.header-lang {
-    padding-top: 35px;
-    display: flex;
-    text-transform: uppercase;
-    @include font-size(24px);
+.header-menu__item {
+  max-width: 270px;
+  width: 100%;
+  padding: 0 15px;
 }
 
-.header-lang__item {
-    &:not(.header-lang__active) a {
-        color: $grayLightColor;
-        @include lineDecor($grayLightColor);
-    }
-    &:not(:last-of-type) {
-        margin-right: 15px;
-    }
+.header-menu__link {
+  width: 100%;
+  min-height: 41px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  color: #fff;
+  background-color: #24404d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    color: #fff;
+    background-color: #f26e20;
+  }
+}
+
+.header-pre-title {
+  min-height: 50px;
+  padding: 12px 30px;
+  color: #fff;
+  background-color: #f26e20;
+  font-size: 22px;
 }

@@ -14,15 +14,15 @@ body {
     min-height: 100vh;
     margin: 0;
     text-align: left;
-    line-height: 1.4;
-    color: #393939;
+    line-height: 1.3;
+    color: #000;
     background-color: #fff;
-    font-family: 'Sylfaen', -apple-system, "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    @include font-size(20px);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
 }
 
 a, .as-link {
-    color: $colorLink;
+    color: #f26e20;
     text-decoration: none;
     transition: all 0.4s ease;
     &:hover {
@@ -48,29 +48,23 @@ h1, h2, h3, h4, h5, h6,
     font-family: inherit;
     line-height: 1.2;
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 h1, .h1 {
     margin-bottom: 70px;
-    @include font-size(45px);
 }
 
 h2, .h2 {
     margin-bottom: 27px;
-    @include font-size(28px);
 }
 
 h3, .h3 {
-    @include font-size(22px);
 }
 
 h4, .h4 {
-    @include font-size(20px);
 }
 
 h6, .h6, h5, .h5 {
-    @include font-size(18px);
 }
 
 .text {
@@ -255,33 +249,5 @@ button, input, select, textarea {
     &:active {
         outline: none;
         box-shadow: none;
-    }
-}
-
-.modal-order {
-    max-width: 253px;
-    margin-left: auto;
-    margin-right: auto;
-    .ui-field {
-        text-align: center;
-    }
-    .btn {
-        width: 100%;
-        margin-top: 18px;
-    }
-}
-
-.title-section {
-    margin-bottom: 30px;
-    color: $colorLink;
-    line-height: 1;
-    text-transform: uppercase;
-    @include font-size(45px)
-}
-
-.see-all {
-    text-align: center;
-    .btn {
-        min-width: 250px;
     }
 }

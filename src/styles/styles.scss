@@ -8,3 +8,11 @@
 @import "common/form";
 @import "common/btn";
 /* blocks */
+@import "blocks/header";
+
+.container {
+  width: 100%;
+  max-width: 1255px;
+  margin-right: auto;
+  margin-left: auto;
+}
