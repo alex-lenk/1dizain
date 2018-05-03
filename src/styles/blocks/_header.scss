@@ -4,7 +4,7 @@
 
 .header-top {
   padding-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
   display: flex;
 }
 
@@ -16,6 +16,7 @@
 }
 
 .header-title {
+  margin-bottom: 20px;
   color: #f26e20;
   font-size: 28px;
   font-weight: normal;
@@ -64,8 +65,9 @@
 }
 
 .header-pre-title {
+  padding-top: 11px;
+  padding-bottom: 11px;
   min-height: 50px;
-  padding: 12px 30px;
   color: #fff;
   background-color: #f26e20;
   font-size: 22px;

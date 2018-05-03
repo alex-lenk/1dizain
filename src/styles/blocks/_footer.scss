@@ -1,9 +1,5 @@
 .footer {
   margin-bottom: 30px;
-  padding: 15px 15px;
-  border: 1px solid #bcbcbc;
-  display: flex;
-  flex-wrap: wrap;
   .as-link {
     padding: 0;
     background: transparent;
@@ -13,6 +9,13 @@
   li:not(:last-child) {
     margin-bottom: 10px;
   }
+}
+
+.footer-inner {
+  padding: 15px;
+  border: 1px solid #bcbcbc;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-block {
