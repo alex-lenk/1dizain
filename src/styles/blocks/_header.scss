@@ -3,13 +3,11 @@
 }
 
 .header-top {
-  padding-left: 30px;
   margin-bottom: 11px;
   display: flex;
 }
 
 .header-info {
-  max-width: 79%;
   padding-top: 25px;
   text-align: center;
   flex: 1;
@@ -30,8 +28,6 @@
 }
 
 .header-logo {
-  width: 21%;
-  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,14 +41,12 @@
 .header-menu__item {
   max-width: 270px;
   width: 100%;
-  padding: 0 15px;
 }
 
 .header-menu__link {
   width: 100%;
-  min-height: 41px;
-  padding-top: 3px;
-  padding-bottom: 2px;
+  min-height: 45px;
+  padding: 3px 5px 2px;
   color: #fff;
   background-color: #24404d;
   display: flex;
