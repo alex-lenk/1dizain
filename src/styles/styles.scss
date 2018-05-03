@@ -3,16 +3,12 @@
 /* common */
 @import "common/variables";
 @import "common/mixin";
-//@import "common/fonts";
 @import "common/common";
-@import "common/form";
-@import "common/btn";
+//@import "common/form";
+//@import "common/btn";
+
 /* blocks */
 @import "blocks/header";
-
-.container {
-  width: 100%;
-  max-width: 1255px;
-  margin-right: auto;
-  margin-left: auto;
-}
+@import "blocks/general-content";
+@import "blocks/iframe";
+@import "blocks/menu-block";

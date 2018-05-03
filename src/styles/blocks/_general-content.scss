@@ -1,0 +1,18 @@
+.general-content {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.general-content-left {
+  width: 78%;
+  padding: 25px 30px;
+  border: 1px solid #bcbcbc;
+}
+
+.general-content-right {
+  width: 20%;
+  margin-left: auto;
+  padding: 10px 10px 0;
+  border: 1px solid #bcbcbc;
+  align-self: flex-start;
+}

@@ -22,4 +22,4 @@
 // = lib/stickUp.min.js
 
 /* 5. bootstrap.min.js */
-// = lib/bootstrap.min.js
+//= lib/bootstrap.min.js
