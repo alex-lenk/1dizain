@@ -4,11 +4,254 @@
 @import "common/variables";
 @import "common/mixin";
 @import "common/common";
-//@import "common/form";
-//@import "common/btn";
+@import "blocks/embed-responsive";
+@import "blocks/modal";
+@import "common/btn";
 /* blocks */
 @import "blocks/header";
 @import "blocks/general-content";
 @import "blocks/iframe";
 @import "blocks/menu-block";
 @import "blocks/footer";
+
+.tabs-caption__item {
+}
+
+.tabs-caption__active {
+  .menu-block-content {
+    display: block;
+  }
+  .menu-block-title {
+    background-color: #24404d;
+  }
+}
+
+.menu-block-content {
+  display: none;
+}
+
+.menu-block-title {
+  min-height: 42px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #f26e20;
+  text-align: center;
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    color: #fff;
+  }
+  &:hover {
+    background-color: #24404d;
+  }
+}
+
+.menu-block-content {
+  ul {
+    padding-top: 7px;
+    line-height: 1.1;
+    ul {
+      padding-top: 10px;
+    }
+  }
+  li {
+    margin-bottom: 15px;
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.panel-body {
+  padding-top: 10px;
+}
+
+.panel-body ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  a {
+    font-weight: bold;
+  }
+  li li a {
+    font-weight: normal;
+  }
+}
+
+.pltk,
+.dipl,
+.otzyv {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    padding: 10px;
+  }
+}
+
+.pltk,
+.services {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  a {
+    min-height: 54px;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #f26e20;
+    text-align: center;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: #24404d;
+    }
+  }
+}
+
+.dipl div {
+  padding: 10px;
+}
+
+.gallery {
+  margin-bottom: 15px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.diplom {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  padding-left: 0;
+  list-style: none;
+  li {
+    padding: 10px;
+    border: 10px solid transparent;
+    outline: 1px solid #f26e20;
+    outline-offset: -10px;
+  }
+}
+
+.question {
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #24404d;
+}
+
+.answer {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #bcbcbc;
+}
+
+.otzyv {
+  margin: 0 -10px;
+  padding-left: 0;
+  list-style: none;
+  li {
+    outline: 1px solid #ccc;
+    outline-offset: -10px;
+  }
+  p {
+    min-height: 44px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #24404d;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a {
+    width: 100%;
+    margin: 5px 0 10px;
+    padding: 0 10px;
+    display: inline-block;
+  }
+}
+
+.otz {
+  border: 1px solid #bcbcbc;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.mc {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #24404d;
+  @include clearfix;
+}
+
+.mc1 {
+  float: left;
+  color: #f26e20;
+  width: 14%;
+  overflow: hidden;
+  margin: 0 1% 20px;
+  display: inline;
+  span {
+    font-size: 20px;
+  }
+}
+
+.mc2 {
+  width: 61%;
+  overflow: hidden;
+  margin: 0 1%;
+  display: inline;
+  float: left;
+}
+
+.mc3 {
+  width: 16%;
+  overflow: hidden;
+  margin: 0;
+  display: inline;
+  float: left;
+}
+
+.navg {
+  h2 {
+    min-height: 54px;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #24404d;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      color: inherit;
+    }
+    &:hover {
+      background-color: #f26e20;
+    }
+  }
+  ul {
+    padding-left: 0;
+    list-style: none;
+    li:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}

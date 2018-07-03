@@ -1,20 +1,21 @@
 .header {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .header-top {
-  margin-bottom: 11px;
+  padding-top: 10px;
   display: flex;
 }
 
 .header-info {
-  padding-top: 25px;
   text-align: center;
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-title {
-  margin-bottom: 20px;
   color: #f26e20;
   font-size: 28px;
   font-weight: normal;
@@ -33,36 +34,72 @@
   justify-content: center;
 }
 
-.header-menu {
-  display: flex;
-  justify-content: center;
-}
-
-.header-menu__item {
-  max-width: 270px;
-  width: 100%;
-}
-
-.header-menu__link {
-  width: 100%;
-  min-height: 45px;
-  padding: 3px 5px 2px;
+.header-panel {
+  padding-top: 11px;
+  min-height: 50px;
   color: #fff;
-  background-color: #24404d;
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  .errors {
+    position: absolute;
+    top: -47px;
+    left: 0;
+    color: #000;
+  }
+}
+
+.header-panel-phone {
+  margin-left: auto;
+  padding-left: 20px;
+  color: #fff;
+  font-size: 20px;
+  white-space: nowrap;
+  &::before {
+    width: 25px;
+    height: 24px;
+    margin-right: 5px;
+    margin-top: -3px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/phone.svg) no-repeat center;
+    background-size: contain;
+    content: '';
+  }
+}
+
+.header-panel-contact {
+  min-height: 75px;
+  max-width: 215px;
+  margin-right: 20px;
+  font-weight: bold;
+  background-color: #8a8a8a;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.4s ease;
   &:hover {
-    color: #fff;
     background-color: #f26e20;
   }
 }
 
-.header-pre-title {
-  padding-top: 11px;
-  padding-bottom: 11px;
-  min-height: 50px;
-  color: #fff;
+.header-panel-support__form {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.header-panel-support__group {
+  display: flex;
+}
+
+.header-panel-support {
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #f26e20;
-  font-size: 22px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
 }
