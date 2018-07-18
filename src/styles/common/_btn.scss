@@ -14,6 +14,42 @@
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &-gray {
+    min-height: 42px;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #8a8a8a;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      color: #fff;
+      background-color: #f26e20;
+    }
+  }
+  &-blue {
+    min-height: 54px;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+    background-color: #24404d;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: #f26e20;
+      color: #fff;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
