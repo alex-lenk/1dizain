@@ -32,6 +32,10 @@
 }
 
 @media (min-width: 993px) {
+  .general-content-right__menu {
+    display: none;
+  }
+
   .general-content-left {
     width: 78%;
     flex: 1;
@@ -118,6 +122,25 @@
 }
 
 @media (max-width: 992px) {
+  .general-content-right__menu {
+    background-color: #f78328;
+    color: #fff;
+    border-radius: 0;
+    margin: 0 0 10px 15px;
+    &:focus,
+    &:hover {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .navg {
+    display: none;
+    ul {
+      padding-left: 15px;
+    }
+  }
+
   .header-panel {
     align-items: flex-start;
     flex-direction: column;

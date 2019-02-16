@@ -21,4 +21,9 @@ $(document).ready(function () {
     })(jQuery);
 
     if((self.parent&&!(self.parent===self))&&(self.parent.frames.length!=0)){self.parent.location=document.location}
+
+
+    $('.general-content-right__menu').on('click', function () {
+        $('.navg').slideToggle();
+    });
 });
