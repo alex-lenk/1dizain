@@ -25,5 +25,6 @@ $(document).ready(function () {
 
     $('.general-content-right__menu').on('click', function () {
         $('.navg').slideToggle();
+        $(this).toggleClass('menu-opened');
     });
 });
