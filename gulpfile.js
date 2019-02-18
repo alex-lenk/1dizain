@@ -2,11 +2,13 @@
 
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
-    prefixer = require('gulp-autoprefixer'),
+    autoprefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
     rigger = require('gulp-rigger'),
     cssmin = require('gulp-minify-css'),
+    cleanCSS = require('gulp-clean-css'),
+    rename = require('gulp-rename'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
@@ -104,14 +106,25 @@ gulp.task('js:build', function () {
 gulp.task('styles:build', function () {
     gulp.src(way.src.styles)
         .pipe(sass({
+            outputStyle: 'compressed',
             includePaths: ['src/styles/'],
             errLogToConsole: true
+        }).on('error', sass.logError)) //Скомпилируем
+        .pipe(gulp.dest(way.build.css)) //И в build
+        .pipe(rename({
+            prefix: "",
+            suffix: ".min",
+            extname: ".css"
         }))
-        .pipe(prefixer({
+        .pipe(autoprefixer({
             browsers: ['last 5 versions'],
             cascade: false
+        })) //Добавим вендорные префиксы
+        .pipe(cleanCSS({debug: true}, function (details) {//Сожмем
+            console.log(details.name + ': ' + details.stats.originalSize);
+            console.log(details.name + ': ' + details.stats.minifiedSize);
         }))
-        .pipe(gulp.dest(way.build.css))
+        .pipe(gulp.dest(way.build.css)) //И в build
         .pipe(reload({
             stream: true
         }));
