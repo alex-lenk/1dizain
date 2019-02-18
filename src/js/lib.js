@@ -1,15 +1,23 @@
 /*
  * Content of libraries
- * 1.   smoothscroll.js
- * 2.   bootstrap.min.js
- * 3.   jquery.fancybox.min.js
+ * 1.   jquery.min.js
+ * 2.   smoothscroll.js
+ * 3.   bootstrap.min.js
+ * 4.   jquery.fancybox.min.js
+ * 5.   jquery.maskedinput.min.js
  */
 
-/* 1. smoothscroll.js */
+/* 1. jquery.min.js */
+//= ../../bower_components/jquery/dist/jquery.min.js
+
+/* 2. smoothscroll.js */
 //= lib/smoothscroll.js
 
-/* 2. bootstrap.min.js */
+/* 3. bootstrap.min.js */
 //= lib/bootstrap.min.js
 
-/* 3. jquery.fancybox.min.js */
+/* 4. jquery.fancybox.min.js */
 //= lib/jquery.fancybox.min.js
+
+/* 5. jquery.maskedinput.min.js */
+//= lib/jquery.maskedinput.min.js
