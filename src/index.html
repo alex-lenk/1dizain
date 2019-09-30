@@ -13,7 +13,7 @@
         <div class="header-logo"><a href="/"><img src="img/logo.png" alt=""></a></div>
     </div>
     <div class="header-panel">
-        <div class="header-panel-contact btn-gray" data-toggle="modal" data-target="#feedback-form7">КОНТАКТЫ И РЕГИСТРАЦИЯ</div>
+        <div class="header-panel-contact btn-gray" data-fancybox="" data-src="#feedbackForm" data-modal="true">КОНТАКТЫ И РЕГИСТРАЦИЯ</div>
         <div class="header-panel-support">
             <form method="post" action="/" class="header-panel-support__form" id="contact-form">
                 <div class="header-panel-support__group">
@@ -41,10 +41,35 @@
 
         <h3>Первая Национальная Школа Телевидения<br>
             Старший преподаватель Владислава Заблоцкая ↓</h3>
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/osBXTxOu-ig?rel=0"
-                    allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-        </div>
+
+        <aside class="iframe-section row hidden-xs">
+            <div class="col-sm-4">
+                <div class="iframe-section-item">
+                    <div class="iframe-section__media" data-fancybox data-src="https://www.youtube.com/embed/rSo1ypeNwZs&amp;autoplay=1&amp;rel=0&amp;showinfo=0"><img src="img/lection-01.jpg" alt="Школа компьютерной графики и веб-дизайна"></div>
+
+                    <div>Школа компьютерной графики и веб-дизайна</div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="iframe-section-item">
+                    <div class="iframe-section__media" data-fancybox
+                         data-src="https://www.youtube.com/embed/uTFFzxOMV3M&amp;autoplay=1&amp;rel=0&amp;showinfo=0"><img src="img/lection-02.jpg" alt="Рисунок &laquo;Построение перспективы&raquo;"></div>
+
+                    <div>Рисунок &laquo;Построение перспективы&raquo;</div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="iframe-section-item">
+                    <div class="iframe-section__media" data-fancybox
+                         data-src="https://www.youtube.com/embed/4myAaUv-24U&amp;autoplay=1&amp;rel=0&amp;showinfo=0"><img src="img/lection-03.jpg" alt="Рисунок &laquo;Черно-белое графическое решение&raquo;"></div>
+
+                    <div>Рисунок &laquo;Черно-белое графическое решение&raquo;</div>
+                </div>
+            </div>
+        </aside>
+
         <div class="hidden-xs">
             <p>Мы делаем выбор не в пользу звезд телевидения, а в пользу звезд телевизионной педагогики. Подобное
                 решение имеет вполне логичное объяснение: великому футболисту далеко не всегда удается стать тренером,
@@ -202,105 +227,103 @@
 </footer>
 
 <!-- Modal -->
-<div class="modal fade" id="feedback-form7" tabindex="-1" role="dialog" aria-labelledby="feedbackFormLabel">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" id="feedbackFormLabel">Зарегистрироваться на бесплатное пробное занятие:</h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6 col-xs-12">
-                        <p><span style="color:#900;"></span></p>
-                        <form method="post" action="/" id="contact-form7">
-                            <input type="hidden" name="formid" value="contact-form7">
-                            <input value="" name="special" class="special" type="text" style="display:none;">
+<div id="feedbackForm" tabindex="-1">
+    <div class="container">
+        <div class="modal-header">
+            <button type="button" class="close" data-fancybox-close><span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="feedbackFormLabel">Зарегистрироваться на бесплатное пробное занятие:</h4>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <p><span style="color:#900;"></span></p>
+                    <form method="post" action="/" id="contact-form7">
+                        <input type="hidden" name="formid" value="contact-form7">
+                        <input value="" name="special" class="special" type="text" style="display:none;">
 
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="user_name7" value=""
-                                       placeholder="Ваше имя*">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="user_email7" value=""
-                                       placeholder="укажите Вашу электронную почту*">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="user_phone7" value=""
-                                       placeholder="укажите номер Вашего телефона">
-                            </div>
-                            <div class="form-group">
-                                <select name="user_specialty7" class="form-control">
-                                    <optgroup label="Школа телевидения. Первое высшее.">
-                                        <option value="Фотожурналист - Фотохудожник">Фотожурналист - Фотохудожник
-                                        </option>
-                                        <option value="Телеоператор - Режиссёр монтажа">Телеоператор - Режиссёр
-                                            монтажа
-                                        </option>
-                                        <option value="Телережиссёр - Клипмейкер">Телережиссёр - Клипмейкер</option>
-                                        <option value="Продюссер - Менеджмент СМИ">Продюссер - Менеджмент СМИ</option>
-                                        <option value="Теле-радиоведущий">Теле-радиоведущий</option>
-                                        <option value="Телекорреспондент">Телекорреспондент</option>
-                                    </optgroup>
-                                    <optgroup label="Телевидение. Курсы переподготовки.">
-                                        <option value="Курсы телеведущих">Курсы телеведущих</option>
-                                        <option value="Курсы радиоведущих">Курсы радиоведущих</option>
-                                        <option value="Курсы спортивных комментаторов">Курсы спортивных комментаторов
-                                        </option>
-                                        <option value="Курсы редактор телевидения">Курсы редактор телевидения</option>
-                                        <option value="Курсы тележурналистики">Курсы тележурналистики</option>
-                                        <option value="Курсы актеров театра, кино и рекламы">Курсы актеров театра, кино
-                                            и рекламы
-                                        </option>
-                                    </optgroup>
-                                    <optgroup label="Режиссура. Курсы переподготовки.">
-                                        <option value="Курсы телеоператоров">Курсы телеоператоров</option>
-                                        <option value="Курсы телережиссера">Курсы телережиссера</option>
-                                        <option value="Курсы режиссера монтажа">Курсы режиссера монтажа</option>
-                                        <option value="Курсы клипмейкеров">Курсы клипмейкеров</option>
-                                        <option value="Курсы сценариста телесериалов и кино">Курсы сценариста
-                                            телесериалов и кино
-                                        </option>
-                                    </optgroup>
-                                </select>
-                            </div>
-                            <div class="form-group">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="user_name7" value=""
+                                   placeholder="Ваше имя*">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="user_email7" value=""
+                                   placeholder="укажите Вашу электронную почту*">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="user_phone7" value=""
+                                   placeholder="укажите номер Вашего телефона">
+                        </div>
+                        <div class="form-group">
+                            <select name="user_specialty7" class="form-control">
+                                <optgroup label="Школа телевидения. Первое высшее.">
+                                    <option value="Фотожурналист - Фотохудожник">Фотожурналист - Фотохудожник
+                                    </option>
+                                    <option value="Телеоператор - Режиссёр монтажа">Телеоператор - Режиссёр
+                                        монтажа
+                                    </option>
+                                    <option value="Телережиссёр - Клипмейкер">Телережиссёр - Клипмейкер</option>
+                                    <option value="Продюссер - Менеджмент СМИ">Продюссер - Менеджмент СМИ</option>
+                                    <option value="Теле-радиоведущий">Теле-радиоведущий</option>
+                                    <option value="Телекорреспондент">Телекорреспондент</option>
+                                </optgroup>
+                                <optgroup label="Телевидение. Курсы переподготовки.">
+                                    <option value="Курсы телеведущих">Курсы телеведущих</option>
+                                    <option value="Курсы радиоведущих">Курсы радиоведущих</option>
+                                    <option value="Курсы спортивных комментаторов">Курсы спортивных комментаторов
+                                    </option>
+                                    <option value="Курсы редактор телевидения">Курсы редактор телевидения</option>
+                                    <option value="Курсы тележурналистики">Курсы тележурналистики</option>
+                                    <option value="Курсы актеров театра, кино и рекламы">Курсы актеров театра, кино
+                                        и рекламы
+                                    </option>
+                                </optgroup>
+                                <optgroup label="Режиссура. Курсы переподготовки.">
+                                    <option value="Курсы телеоператоров">Курсы телеоператоров</option>
+                                    <option value="Курсы телережиссера">Курсы телережиссера</option>
+                                    <option value="Курсы режиссера монтажа">Курсы режиссера монтажа</option>
+                                    <option value="Курсы клипмейкеров">Курсы клипмейкеров</option>
+                                    <option value="Курсы сценариста телесериалов и кино">Курсы сценариста
+                                        телесериалов и кино
+                                    </option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
                                 <textarea name="user_comments7" class="form-control" rows="7"
                                           placeholder="Сообщение"></textarea>
-                            </div>
-                            <!--<h4 class="modal-title" id="feedbackFormLabel">Подтвердите, что Вы не робот. Поставьте галочку.</h4><br />
-                         <div style="margin-bottom:10px" class="g-recaptcha" data-sitekey="6LfNbyAUAAAAADAe2Hh_3YXmg3p7moZFlWZA_aa0"></div>-->
-                            <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-warning" value="Отправить сообщение">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                        <h2 style="margin: 5px 0;">Телефон приёмной комиссии:<br/><span
-                                class="black">+7 495 201-13-00</span></h2>
-                        <!--<h2> <a href="mform">Регистрация</a> в новую группу</h2>
-                        <h2>Если вы не можете дозвониться - закажите <a href="mform">обратный звонок</a></h2>-->
+                        </div>
+                        <!--<h4 class="modal-title" id="feedbackFormLabel">Подтвердите, что Вы не робот. Поставьте галочку.</h4><br />
+                     <div style="margin-bottom:10px" class="g-recaptcha" data-sitekey="6LfNbyAUAAAAADAe2Hh_3YXmg3p7moZFlWZA_aa0"></div>-->
+                        <div class="form-group">
+                            <input type="submit" name="submit" class="btn btn-warning" value="Отправить сообщение">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <h2 style="margin: 5px 0;">Телефон приёмной комиссии:<br/><span
+                            class="black">+7 495 201-13-00</span></h2>
+                    <!--<h2> <a href="mform">Регистрация</a> в новую группу</h2>
+                    <h2>Если вы не можете дозвониться - закажите <a href="mform">обратный звонок</a></h2>-->
 
-                        <h2 style="margin:0 0 5px">Телефон по административным вопросам:<br/><span class="black">+7 964 641-43-00</span>
-                        </h2>
-                        <p style="margin: 30px 0 0;"><b>Наш адрес:<br/><span class="black">Москва, м. Новокузнецкая, Садовническая ул. 33, ауд. №214.</span></b>
-                        </p>
+                    <h2 style="margin:0 0 5px">Телефон по административным вопросам:<br/><span class="black">+7 964 641-43-00</span>
+                    </h2>
+                    <p style="margin: 30px 0 0;"><b>Наш адрес:<br/><span class="black">Москва, м. Новокузнецкая, Садовническая ул. 33, ауд. №214.</span></b>
+                    </p>
 
-                        <h3 style="margin: 20px 0 10px;">Как пройти от метро Новокузнецкая?</h3>
-                        <p>Выйти из метро налево, до трамвайных путей, повернуть налево и идти вдоль трамвайных путей по
-                            Садовническому проезду. Перейти мостик над Водоотводным каналом по правой стороне. Перейти
-                            перекрёсток через Садовническую улицу.<br/>
-                            Стоп! Здание Университета перед вами. Школа Компьютерной Графики и Дизайна на втором
-                            этаже.<br/>
-                            Весь путь занимает 5-7 минут.</p>
+                    <h3 style="margin: 20px 0 10px;">Как пройти от метро Новокузнецкая?</h3>
+                    <p>Выйти из метро налево, до трамвайных путей, повернуть налево и идти вдоль трамвайных путей по
+                        Садовническому проезду. Перейти мостик над Водоотводным каналом по правой стороне. Перейти
+                        перекрёсток через Садовническую улицу.<br/>
+                        Стоп! Здание Университета перед вами. Школа Компьютерной Графики и Дизайна на втором
+                        этаже.<br/>
+                        Весь путь занимает 5-7 минут.</p>
 
-                    </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Закрыть</button>
-            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-fancybox-close>Закрыть</button>
         </div>
     </div>
 </div>

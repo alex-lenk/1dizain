@@ -117,7 +117,6 @@ gulp.task('styles:build', function () {
             extname: ".css"
         }))
         .pipe(autoprefixer({
-            browsers: ['last 5 versions'],
             cascade: false
         })) //Добавим вендорные префиксы
         .pipe(cleanCSS({debug: true}, function (details) {//Сожмем

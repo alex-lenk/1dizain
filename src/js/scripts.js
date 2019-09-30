@@ -23,6 +23,17 @@ $(document).ready(function () {
     if ((self.parent && !(self.parent === self)) && (self.parent.frames.length !== 0)) {
         self.parent.location = document.location
     }*/
+/*
+    $(".video-inner__play").click(function() {
+
+        var $video = $('#video-frame'),
+            src = $video.attr('src');
+
+        $video.attr('src', src + '&autoplay=1');
+
+        $('.video-inner').addClass('video-open');
+    });
+*/
 
 
     $('.general-content-right__menu').on('click', function () {
