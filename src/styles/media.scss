@@ -32,6 +32,10 @@
 }
 
 @media (min-width: 993px) {
+  .general-content-left {
+    border: 1px solid #bcbcbc;
+  }
+
   .general-content-right__menu {
     display: none;
   }
@@ -61,10 +65,6 @@
   .general-content-left {
     padding: 25px 30px;
   }
-  .footer-inner {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 
 //**************************************************
@@ -81,6 +81,7 @@
   }
   .header-panel-support {
     padding-top: 10px;
+
     .form-control {
       margin-bottom: 10px;
     }
@@ -101,9 +102,6 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .general-content-left {
-    padding: 15px;
-  }
 }
 
 @media (max-width: 1099px) {
@@ -115,6 +113,7 @@
     width: 100%;
     margin-right: 0;
     flex-direction: column;
+
     .form-control {
       max-width: 100%;
     }
@@ -129,6 +128,7 @@
     position: relative;
     display: flex;
     align-items: center;
+
     &:focus,
     &:hover {
       outline: none;
@@ -144,17 +144,15 @@
     width: 35px;
     height: 35px;
     font-size: 0;
-    text-indent: -9999px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    text-indent: -999px;
     appearance: none;
     box-shadow: none;
     border-radius: 0;
     border: none;
     cursor: pointer;
-    -webkit-transition: background 0.3s;
     transition: background 0.3s;
     background-color: transparent;
+    flex: none;
   }
   .toggle-switch-inner {
     display: block;
@@ -205,6 +203,7 @@
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
       }
+
       &::before {
         top: 0;
         -webkit-transform: rotate(45deg);
@@ -280,6 +279,10 @@
   .general-content-right {
     border-width: 0;
   }
+
+  .menu-block-title {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -295,11 +298,8 @@
     width: 100%;
   }
 
-  .footer-inner {
-    flex-direction: column;
-    .footer-block:not(:last-of-type) {
-      margin-bottom: 40px;
-    }
+  .footer-inner .footer-block:not(:last-of-type) {
+    margin-bottom: 40px;
   }
 }
 
@@ -314,6 +314,12 @@
     padding-left: 0;
     margin-right: auto;
     margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1255px) {
+  .general-content-left {
+    padding: 15px;
   }
 }
 
